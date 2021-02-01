@@ -24,7 +24,7 @@ Otherwise, it is text.
 
 You should set self._src_type, self._content, and self._orig_content in the __init__() method.
 
-
+<br />
 **set_content_to_tag(self, tag, tag_id=None)**<br />
 Changes _content to the text within a specific element of an HTML document.<br />
 Keyword arguments:
