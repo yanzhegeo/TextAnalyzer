@@ -22,20 +22,19 @@ Otherwise, it is text.
 - path
 - text
 
-You should set self._src_type, self._content, and self._orig_content in the __init__() method.
+You should set self._src_type, self._content, and self._orig_content in the __init__() method.<br /><br />
 
-<br />
 **set_content_to_tag(self, tag, tag_id=None)**<br />
 Changes _content to the text within a specific element of an HTML document.<br />
 Keyword arguments:
 - tag (str) -- Tag to read
 - tag_id (str) -- ID of tag to read
 
-It's possible the HTML does not contain the tag being searched. You should use exception handling to catch any errors.
+It's possible the HTML does not contain the tag being searched. You should use exception handling to catch any errors.<br /><br />
 
 
 **reset_content(self)**<br />
-Resets _content to full text that was originally loaded. Useful after a call to set_content_to_tag().
+Resets _content to full text that was originally loaded. Useful after a call to set_content_to_tag().<br /><br />
 
 
 **_words(self, casesensitive=False):**<br />
@@ -45,7 +44,7 @@ Keyword arguments:
 
 Hints<br />
 After splitting the text into words using the split() method, strip any leading and trailing punctuation using:
-[word.strip(string.punctuation) for word in words]
+[word.strip(string.punctuation) for word in words]<br /><br />
 
 
 **common_words(self, minlen=1, maxlen=100, count=10, casesensitive=False)**<br />
@@ -54,14 +53,14 @@ Keyword arguments:
 - minlen (int) - Minimum length of words to include.
 - maxlen (int) - Maximum length of words to include.
 - count (int) - Number of words to include.
-- casesensitive (bool) -- If False makes all words uppercase
+- casesensitive (bool) -- If False makes all words uppercase<br /><br />
 
 
 **char_distribution(self, casesensitive=False, letters_only=False)**<br />
 Returns a list of 2-element tuples of the format (char, num), where num is the number of times char shows up in _content. The list should be sorted by num in descending order.<br />
 Keyword arguments:
 - casesensitive (bool) -- Consider case?
-- letters_only (bool) -- Exclude non-letters?
+- letters_only (bool) -- Exclude non-letters?<br /><br />
 
 
 **plot_common_words(self, minlen=1, maxlen=100, count=10, casesensitive=False)**<br />
@@ -70,14 +69,14 @@ Keyword arguments:
 - minlen (int) -- Minimum length of words to include.
 - maxlen (int) -- Maximum length of words to include.
 - count (int) -- Number of words to include.
-- casesensitive (bool) -- If False makes all words uppercase.
+- casesensitive (bool) -- If False makes all words uppercase.<br /><br />
 
 
 **plot_char_distribution(self, casesensitive=False, letters_only=False)**<br />
 Plots character distribution.<br />
 Keyword arguments:
 - casesensitive (bool) -- If False makes all words uppercase.
-- letters_only (bool) -- Exclude non-letters?
+- letters_only (bool) -- Exclude non-letters?<br /><br />
 
 
 **Properties**<br />
